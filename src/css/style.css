@@ -28,7 +28,7 @@ body {
 .toggle-menu {
   position: absolute;
   top: 3.5rem;
-  left: 25em;
+  left: 18em;
   z-index: 20;
   right: 8rem;
   cursor: pointer;
@@ -47,40 +47,36 @@ body {
 }
 
 .header {
-  width: 375x;
-  height: 538px;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin-bottom: 1rem;
   background-image: url("/assets/images/mobile/image-header.jpg");
+  background-size: contain;
 }
 @media screen and (min-width: 600px) {
   .header {
     background-image: url("/assets/images/desktop/image-header.jpg");
-    height: 800px;
   }
 }
 .logo {
   width: 120px;
-  z-index: 10;
-  position: absolute;
+  position: relative;
   top: 2rem;
   margin-left: 0.5rem;
 }
 
 .main-menu {
-  position: absolute;
-  margin-left: 3.5rem;
+  position: relative;
+  margin-left: 2.3rem;
+  width: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-items: center;
   background-color: rgb(255, 255, 255);
-  z-index: 10;
-  height: 290px;
-  width: 375px;
-  margin-top: 15rem;
+  top: -13rem;
 }
 
 @media screen and (min-width: 600px) {
@@ -113,12 +109,6 @@ body {
   }
 }
 
-.portada {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 @media screen and (min-width: 600px) {
   .portada {
     display: flex;
@@ -130,10 +120,12 @@ body {
 }
 
 .title {
+  position: absolute;
   color: white;
   text-align: center;
-  font-size: xx-large;
+  font-size: 3rem;
   font-weight: bolder;
+  top: 14rem;
 }
 
 @media screen and (min-width: 600px) {
@@ -148,4 +140,128 @@ body {
 }
 
 .photo {
+}
+
+.items {
+  position: relative;
+  top: -10em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.item-2 {
+  padding: 2.5rem;
+}
+
+.titleitem {
+  color: #24303e;
+  font-size: 2rem;
+}
+
+.pitem {
+  color: #808397;
+  font-size: 1.1rem;
+}
+
+.learn {
+  color: #24303e;
+  font-weight: bolder;
+  text-decoration: underline #fad400;
+}
+
+.item-5 {
+  background-image: url("/assets/images/mobile/image-graphic-design.jpg");
+  display: flex;
+  flex-direction: column-reverse;
+  background-size: cover;
+  height: 600px;
+  padding: 2.5rem;
+}
+
+.item-6 {
+  background-image: url("/assets/images/mobile/image-photography.jpg");
+  display: flex;
+  flex-direction: column-reverse;
+  background-size: cover;
+  height: 600px;
+  padding: 2.5rem;
+}
+
+.testimonials {
+  position: relative;
+  top: -10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 3rem;
+  padding: 3rem;
+}
+
+.testimonialtitle {
+  color: #a7aaad;
+  letter-spacing: 0.1rem;
+  font-size: 1.3rem;
+}
+
+.name {
+  color: #000000;
+  font-weight: bolder;
+  font-size: 1.4rem;
+}
+
+.profession {
+  color: #a7aaad;
+  margin-top: -1rem;
+}
+
+.face {
+  height: 5rem;
+  margin-left: 35%;
+  border-radius: 50%;
+}
+
+.cuadrado {
+  position: relative;
+  top: -8rem;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+}
+
+.footer {
+  position: relative;
+  top: -8rem;
+  background-color: #90d4c6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem;
+  height: 350px;
+}
+
+.logof {
+  opacity: 80%;
+}
+
+.submenu {
+  padding-top: 4rem;
+  word-spacing: 3rem;
+  color: #458d7e;
+  font-weight: bolder;
+  font-size: 1.1rem;
+}
+
+.socialmedia {
+  display: flex;
+  flex-direction: row;
+}
+
+.redes {
+  width: 100%;
+  height: 120%;
+  padding: 1rem;
+  padding-top: 4rem;
 }
